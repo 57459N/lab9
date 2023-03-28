@@ -11,7 +11,7 @@
 </c:if>
 <%-- Общая декоративная "шапка" для всех страниц --%>
 <div style="background-color: #a0c8ff; padding: 10px; ">
-    <img src="/ad/resources/ad.png" width="50" height="53" border="0"
+    <img src="../resources/ad.png" width="50" height="53" border="0"
          align="left">
     <div style="font-family: 'Trebuchet'; font-size: 30px; height: 53px;
 margin-left: 80px;">

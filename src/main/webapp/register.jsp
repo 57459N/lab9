@@ -11,7 +11,7 @@
 </head>
 <body>
 <%-- Подключить заголовок страницы --%>
-<jsp:include page="/static/header.jsp"></jsp:include>
+<jsp:include page="./static/header.jsp"></jsp:include>
 <%-- Вставить разметку 1-колоночной страницы --%>
 <my:layout1Column>
     <h1>Регистрация нового пользователя</h1>
@@ -19,7 +19,7 @@
     <my:errorMessage/>
     <%-- Отобразить форму регистрации (с подстановкой переданных
     данных) --%>
-    <form action="/ad/doRegister.jsp" method="post">
+    <form action="./doRegister.jsp" method="post">
         <table body="0" cellspacing="0" cellpadding="10">
             <tr>
                 <td>Логин:</td>
@@ -61,6 +61,6 @@
     </form>
 </my:layout1Column>
 <%-- Вставить нижний заголовок страницы --%>
-<%@ include file="/static/footer.jsp" %>
+<%@ include file="./static/footer.jsp" %>
 </body>
 </html>

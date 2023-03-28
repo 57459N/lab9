@@ -17,7 +17,7 @@
 </head>
 <body>
 <%-- Подключить заголовок страницы --%>
-<jsp:include page="/static/header.jsp"></jsp:include>
+<jsp:include page="./static/header.jsp"></jsp:include>
 <%-- Вставить разметку 1-колоночной страницы --%>
 <my:layout1Column>
     <%-- Вывести тему объявления крупными буквами как заголовок

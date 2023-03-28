@@ -47,7 +47,7 @@ public class GetAds extends SimpleTagSupport {
     public void setVar(String var) {
         this.var = var;
     }
-
+    
     public void doTag() throws JspException, IOException {
 // Извлечь из контекста приложения общий список объявлений
         final AdList adList = (AdList) getJspContext().getAttribute("ads",

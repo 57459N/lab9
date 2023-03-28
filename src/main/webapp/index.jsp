@@ -15,7 +15,6 @@
 <%-- Подключить заголовок страницы --%>
 <jsp:include page="/static/header.jsp"></jsp:include>
 <h1>Главная страница</h1>
-<my:la
 <%-- Вставить разметку 2-колоночной страницы --%>
 <my:layout2Columns leftColumnWidth="68%" rightColumnWidth="28%">
 <jsp:attribute name="leftColumnBody">
@@ -47,8 +46,6 @@ rightColumnBody --%>
 </my:loginForm>
         <%-- Вставить ссылку регистрации --%>
         <my:registerButton>
-Курс «Прикладное программирование». Лабораторная работа №8
-© Стрикелев Д.А. 53
 <jsp:attribute name="processor">
 <%-- Адрес страницы с формой регистрации
 передаѐтся как и

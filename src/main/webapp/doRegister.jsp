@@ -15,12 +15,10 @@
 <jsp:setProperty name="userData" property="*" />
 <%-- Обратиться к собственному тегу для сохранения пользователя --%>
 <ad:addUser user="${userData}" />
-<%-- Проанализировать переменную errorMessage в области видимости session --
-%>
+<%-- Проанализировать переменную errorMessage в области видимости session --%>
 <c:choose>
 <c:when test="${sessionScope.errorMessage==null}">
-<%-- Ошибок не возникло, удалить из сессии сохранѐнные данные
-пользователя --%>
+<%-- Ошибок не возникло, удалить из сессии сохранѐнные данные пользователя --%>
 <c:remove var="userData" scope="session" />
 <%-- Инициировать процесс аутентификации --%>
 <jsp:forward page="/doLogin.jsp" />

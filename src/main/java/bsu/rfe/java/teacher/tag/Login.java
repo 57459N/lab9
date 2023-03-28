@@ -28,8 +28,7 @@ public class Login extends SimpleTagSupport {
 // Изначально описание ошибки = null (т.е. ошибки нет)
         String errorMessage = null;
 // Извлечь из контекста приложения общий список пользователей
-        UserList userList = (UserList)
-                getJspContext().getAttribute("users", PageContext.APPLICATION_SCOPE);
+        UserList userList = (UserList)getJspContext().getAttribute("users", PageContext.APPLICATION_SCOPE);
         if (login == null || login.equals("")) {
             errorMessage = "Логин не может быть пустым!";
         } else {
